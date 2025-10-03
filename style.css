@@ -48,7 +48,8 @@ h1 {
 
 /* Вертикальные дни недели */
 .vertical-day {
-    writing-mode: vertical-lr;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
     text-orientation: mixed;
     font-weight: bold;
     background-color: white;
