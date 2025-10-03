@@ -226,3 +226,12 @@ sup {
 .nav-button:hover {
     background-color: #2980b9;
 }
+
+/* Исправление для якорных ссылок */
+html {
+    scroll-padding-top: 20px; /* Отступ сверху при прокрутке к якорю */
+}
+
+.subject-section {
+    scroll-margin-top: 20px; /* Отступ для секций при прокрутке */
+}
