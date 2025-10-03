@@ -1,0 +1,151 @@
+/* Базовые стили */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f8f9fa;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 30px;
+    font-size: 28px;
+}
+
+h3 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 30px;
+    font-size: 20px;
+}
+
+/* Стили таблицы */
+.schedule {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    border: 2px solid #333;
+    font-size: 14px;
+}
+
+/* Заголовки таблицы */
+.schedule th {
+    background-color: #ffffff;
+    color: rgb(8, 8, 8);
+    padding: 15px;
+    text-align: center;
+    font-weight: bold;
+    border: 1px solid #333;
+}
+
+/* Ячейки таблицы */
+.schedule td {
+    padding: 15px;
+    border: 1px solid #333;
+    text-align: center;
+    vertical-align: middle;
+    background-color: white;
+}
+
+/* Вертикальные дни недели */
+.vertical-day {
+    writing-mode: vertical-lr;
+    text-orientation: mixed;
+    font-weight: bold;
+    background-color: white;
+    color: #333;
+    font-size: 16px;
+    padding: 20px 8px;
+    text-align:left;
+    width: 40px;
+}
+
+/* Стили для времени */
+.time {
+    font-weight: bold;
+    background-color: white;
+    color: #333;
+    width: 120px;
+}
+
+/* Верхние индексы для минут */
+sup {
+    font-size: 12px;
+    vertical-align: super;
+}
+
+/* Стили для ячеек с предметами */
+.subject-cell {
+    background-color: white;
+    padding: 10px;
+}
+
+/* Ссылки на предметы */
+.subject-link {
+    font-weight: bold;
+    color: #0066cc;
+    text-decoration: none;
+    font-size: 16px;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.subject-link:hover {
+    color: #ff6600;
+    text-decoration: underline;
+}
+
+/* Преподаватель и аудитория */
+.teacher {
+    color: #000000;
+    margin-bottom: 3px;
+    font-size: 14px;
+}
+
+.room {
+    color: #000000;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+/* Адаптивность для мобильных */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+    
+    h1 {
+        font-size: 22px;
+    }
+    
+    .schedule th,
+    .schedule td {
+        padding: 10px 5px;
+        font-size: 12px;
+    }
+    
+    .vertical-day {
+        font-size: 14px;
+        padding: 15px 5px;
+        width: 30px;
+    }
+    
+    .subject-link {
+        font-size: 14px;
+    }
+    
+    .teacher,
+    .room {
+        font-size: 12px;
+    }
+    
+    .time {
+        width: 100px;
+    }
+}
